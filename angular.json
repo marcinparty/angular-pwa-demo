@@ -5,7 +5,17 @@
   "projects": {
     "angular-pwa-demo": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -16,15 +26,11 @@
             "outputPath": "dist/angular-pwa-demo",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "outputHashing": "all",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets",
-              "src/manifest.json",
               {
                 "glob": "**/*",
                 "input": "public"
