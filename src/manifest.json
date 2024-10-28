@@ -1,0 +1,73 @@
+{
+  "name": "Angular PWA Demo",
+  "short_name": "A-PWA-Demo",
+  "start_url": "/?home=true",
+  "display": "fullscreen",
+  "description": "Angular PWA Demo application description",
+  "lang": " The default language of your application",
+  "dir": "auto",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "orientation": "portrait",
+  "display_override": [
+    "window-controls-overlay"
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "mailto",
+      "url": "/newEmail?to=%s"
+    }
+  ],
+  "icons": [
+    {
+      "src": "assets/icons/android/android-launchericon-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/android/android-launchericon-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/icons/android/android-launchericon-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/android/android-launchericon-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshots/1024x500.png",
+      "sizes": "1024x500",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Horizontal screenshot",
+      "description": "A screenshot of the home page"
+    },
+    {
+      "src": "assets/screenshots/500x1024.png",
+      "sizes": "500x1024",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Wertical screenshot",
+      "description": "A screenshot of the home page"
+    }
+  ],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "angular-pwa-demo shortcut",
+      "url": "/",
+      "description": "A description of the functionality of this shortcut"
+    }
+  ]
+}
