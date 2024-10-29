@@ -1,9 +1,9 @@
 {
   "name": "Angular PWA Demo",
-  "short_name": "A-PWA-Demo",
+  "short_name": "PWA-Demo",
   "start_url": "/?home=true",
   "display": "fullscreen",
-  "description": "Angular PWA Demo application description",
+  "description": "Test PWA application",
   "lang": " The default language of your application",
   "dir": "auto",
   "theme_color": "#000000",
@@ -65,9 +65,17 @@
   "prefer_related_applications": false,
   "shortcuts": [
     {
-      "name": "angular-pwa-demo shortcut",
-      "url": "/",
-      "description": "A description of the functionality of this shortcut"
+        "name": "Shortcut name to show in the menu",
+        "description": "A description of what the shortcut does",
+        "url": "Link to shortcut",
+        "icons": [
+          {
+              "src": "assets/icons/android/android-launchericon-96-96.png",
+              "sizes": "96x96",
+              "type": "image/png",
+              "purpose": "any"
+          }
+        ]
     }
   ]
 }
