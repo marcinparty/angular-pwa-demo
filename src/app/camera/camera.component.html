@@ -1,1 +1,32 @@
-<p>camera works!</p>
+<div class="scanner-shell" [hidden]="!hasDevices">
+  @if(!qrResultString) {
+  <header>
+    <mat-form-field>
+      <mat-select
+        [formControl]="currentDeviceControl"
+        matNativeControl
+        matInput
+        placeholder="Select device">
+        <mat-option *ngFor="let device of availableDevices" [value]="device">
+          {{ device.label }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </header>
+
+  <zxing-scanner
+    [(device)]="currentDevice"
+    (scanSuccess)="onCodeResult($event)"
+    [formats]="formatsEnabled"
+    (camerasFound)="onCamerasFound($event)"></zxing-scanner>
+  } @else {
+
+  <section class="results" *ngIf="qrResultString">
+    <div>
+      <small>Result</small>
+      <strong>{{ qrResultString }}</strong>
+    </div>
+  </section>
+  <button mat-flat-button (click)="clearResult()">Scan again</button>
+  }
+</div>
