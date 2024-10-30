@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {FormsModule} from '@angular/forms';
+// import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -11,11 +8,8 @@ import {FormsModule} from '@angular/forms';
   imports: [
     RouterOutlet,
     RouterLink,
-    RouterLinkActive,
-    MatSlideToggleModule,
-    MatInputModule,
-    MatFormFieldModule,
-    FormsModule
+    RouterLinkActive/* ,
+    FormsModule */
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
